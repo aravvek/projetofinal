@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="sortcut icon" href="img/MordorLogoMblack.png" type="image/gif" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <title>MORDOR - Moda masculina, feminina e infantil</title>
+</head>
+
+<body>
+  <main id="principal">
+    <header id="topo">
+      <nav id="nav-bar">
+        <figure id="icon">
+          <img src="img/MordorLogoMblack.png" alt="Mordor icon" />
+        </figure>
+        <ul id="opcoes">
+          <li><a href="#">Home</a></li>
+          <li><a href="#fotos">Produtos</a></li>
+          <li><a href="#formulario">Contato</a></li>
+          <li><button id="btn-entrar" type="submit">Entrar</button></li>
+        </ul>
+      </nav>
+    </header>
+    <button onclick="abrirModal()" id="abrir">
+      <a href="#" onclick="abrirModal()">CUPOM <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 2 16 18">
+        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+      </svg></a>
+    </button>
+    <div id="cortina">
+      <div id="modal">
+        <a href="#" onclick="fecharModal()" id="fechar">X</a>
+        <section onclick="darDesconto()" id="desconto"></section>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/funcoes.js"> </script>
+    <section id="banner">
+      <img src="img/Mordor - Logo Inverso.png" alt="" />
+      <h1>PARA SE DESTACAR E NÃO SUMIR.</h1>
+    </section>
+    <h2 id="h2-produtos">Conheça nossos produtos</h2>
+    <section id="container-modelo">
+      <article id="modelo">
+        <div><a href="">Masculino</a></div>
+        <div><a href="">Feminino</a></div>
+        <div><a href="">Infantil</a></div>
+        <div><a href="">Calçados</a></div>
+      </article>
+    </section>
+    <div id="carrossel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/banner01.jpg" alt="Los Angeles" style="width: 100%" />
+          </div>
+          <div class="item">
+            <img src="img/banner04.jpg" alt="Chicago" style="width: 100%" />
+          </div>
+          <div class="item">
+            <img src="img/banner02.jpg" alt="New York" style="width: 100%" />
+          </div>
+          <div class="item">
+            <img src="img/banner03.jpg" alt="New York" style="width: 100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="fotos">
+      <article id="container-fotos">
+        <figure>
+          <a
+            href="https://br.shein.com/Men-Solid-Pocket-Front-Shirt-p-3198718-cat-1979.html?scici=MenHomePage~~ON_Banner,CN_Category,HZ_Shirts,HI_hotZoneezj3t0l4dd8~~4_2~~real_1979~~SPcAod_default_202511~~"><img
+              src="img/masculino1.jpg" alt="roupa masculina" />
+          </a>
+          <p>Camiseta verde basica</p>
+          <h4 id="p1">R$39,90</h4>
+        </figure>
+        <figure>
+          <a
+            href="https://br.shein.com/Men-Elastic-Waist-Slant-Pocket-Pants-p-2904066-cat-1978.html?scici=navbar_MenHomePage~~tab04navbar03menu05dir02~~3_5_2~~real_1978~~~~0"><img
+              src="img/masculino2.jpg" alt="roupa masculina" />
+          </a>
+          <p>Calça jeans bege</p>
+          <h4 id="p2">R$69,99</h4>
+        </figure>
+        <figure>
+          <a
+            href="https://br.shein.com/Men-Two-Tone-Skate-Shoes-p-3233931-cat-2093.html?scici=navbar_MenHomePage~~tab04navbar06menu04dir01~~6_4_1~~real_2093~~~~0">
+            <img src="img/masculino3.jpg" alt="roupa masculina" /></a>
+          <p>Tênis basico</p>
+          <h4 id="p3">R$159,90</h4>
+        </figure>
+        <figure>
+          <a
+            href="https://br.shein.com/Solid-Flounce-Sleeve-Blouse-p-2502419-cat-1733.html?scici=navbar_WomenHomePage~~tab01navbar04~~4~~webLink~~~~0">
+            <img src="img/feminino1.jpg" alt="roupa feminina" /></a>
+          <p>Camisa verda basica</p>
+          <h4 id="p4">R$29,90</h4>
+        </figure>
+        <figure>
+          <a
+            href="https://br.shein.com/SHEIN-Tassel-Tie-Waist-Ditsy-Floral-Wrap-Pants-p-1062931-cat-1740.html?scici=navbar_WomenHomePage~~tab01navbar04menu07dir01~~4_7_1~~real_1740~~~~0">
+            <img src="img/feminino2.jpg" alt="roupa feminina" /></a>
+          <p>Calça florida</p>
+          <h4 id="p5">R$49,99</h4>
+        </figure>
+        <figure>
+          <a
+            href="https://br.shein.com/Guipure-Lace-Insert-Open-Back-Floral-Layered-Dress-p-2313244-cat-1727.html?scici=productDetail~~RecommendList~~RS_own,RJ_NoFaultTolerant~~Customers%20Also%20Viewed~~SPcProductDetailCustomersAlsoViewedList~~0">
+            <img src="img/feminino3.jpg" alt="roupa feminina" />
+          </a>
+          <p>Vestido florido</p>
+          <h4 id="p6">R$89,90</h4>
+        </figure>
+      </article>
+    </section>
+    <section id="formulario">
+      <article id="container-formulario">
+        <h2 id="h2-formulario">Mande-nos uma mensagem</h2>
+        <form action="">
+          <div class="form-floating">
+            <input type="name" class="form-control" id="floatingPassword" placeholder="name" />
+            <label for="floatingPassword">Nome:</label>
+          </div>
+          <br />
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Email:</label>
+          </div>
+          <br />
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Mensagem:</label>
+          </div>
+          <div class="col-auto" id="btn-enviar">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </article>
+    </section>
+    <footer id="rodape">
+      <div id="container-rodape">
+        <figure>
+          <img src="img/Mordor - Logo Outline Inverso.png" alt="" />
+        </figure>
+        <div id="redes-sociais">
+          <a href="https://www.facebook.com/LOTRonPrime/"><i class="fa fa-facebook fa-lg"></i></a>
+          <a href="https://twitter.com/lotronprime"><i class="fa fa-twitter fa-lg"></i></a>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrjDqLwFTxStwPscXpSDJfJSqqpMPzxppKwkkgDMhKbVVgTZslnlgXNNrNVpTkSpBMgTvV"><i
+              class="fa fa-google fa-lg"></i></a>
+          <a href="https://www.instagram.com/lotronprime/?hl=pt"><i class="fa fa-instagram fa-lg"></i></a>
+        </div>
+        <address>
+          Copyright &copy; WebMaster 2021. Todos os direitos reservados a
+          Guilherme da Silva Costa, Lucas Ferrino Guglieri e Fabiano Guarnieri
+          Martins.
+        </address>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
